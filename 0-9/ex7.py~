@@ -1,0 +1,7 @@
+end1 = 'Chees'
+end2 = 'e'
+end3 = 'B'
+end4 = 'urger'
+
+print end1 + end2,
+print end3 + end4

@@ -1,0 +1,37 @@
+PROJECT CONCEPT
+
+"word counts for specific terms in pdf + print out list"
+select key words, input them into a dialog box. program counts the number of times they appear in the paper. program displays the words + number of appearances in table. 
+
+
+KEY TERMS
+
+NOUNS
+-paper
+-button/prompt
+-dialog box
+-words
+-paper
+-tally(count)
+-table(print)
+
+VERBS
+-input
+-search
+-counting
+-organize
+-print
+
+MAP
+
+-open program (press button?)
+-dialog box appears asking for what words you would like counted
+-input words like so: '','','','' and so forth
+-program searches paper to find words.
+--for every word, program searches for instances of it, adds to a sum tally
+--adds number counts to a table
+--repeats for every word listed
+-prints out table
+
+CLASS HIERARCHY
+

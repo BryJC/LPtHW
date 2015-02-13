@@ -1,0 +1,55 @@
+# example module - count and return number of times key words are mentioned in a scientific article (pdf version)
+
+import operator
+from sys import argv
+
+doc = argv
+
+
+class Engine(object):
+
+    # runs the program    
+    def __init__(self, doc):
+        self.doc = doc
+        
+    def start(self):
+        look = Search_Report(self, self.doc)
+
+class Search_Report(Engine):
+
+    # opens the dialog prompt and returns the submitted words    
+    def prompt(self):
+        ask = raw_input("What words would you like counted?\n")
+        prompt_words = ask.split()
+        return prompt_words
+
+    # turns doc single string into multiple words
+    def splitting(self):
+        doc_strip = doc.strip(",.'!?:/()$%#;\"")
+        doc_words = doc_strip.split()
+        return doc_words
+        
+    # finds the submitted words in the document        
+    def find(prompt_words, doc_words):
+        word_dict = {}
+        for word in prompt_words:
+            count = 0
+            if word == word in doc_words:
+                count += 1
+            elif word != word in doc_words:
+                pass
+            else:
+                pass
+            word_dict[word] = count
+            return word_dict
+        return word_dict
+    
+    # prints the total number of instances of each word to one table with 'word = number' format
+    def applied(word_dict):
+        sorted_word_dict = sorted(word_dict.items(), key=operator.itemgetter(1))
+        print sorted_word_dict
+        
+
+
+a_search = Engine(doc)
+a_search.start()
